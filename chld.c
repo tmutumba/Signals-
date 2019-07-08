@@ -4,9 +4,6 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-void handler(int signum){
-    assert(printf("signal %d got it\n", signum) == 0);
-}
 
 int main() {
 
