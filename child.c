@@ -10,14 +10,16 @@ int main() {
     pid_t ppid = getppid();
 
     printf("\nPARENT: sending SIGHUP\n\n");
-    kill(ppid, SIGUSR1);
+    assert(kill(ppid, SIGUSR1) != -1);
     sleep (3);
 
     printf("\nPARENT: sending SIGINT\n\n");
-    kill(ppid, SIGUSR1);
+    assert(kill(ppid, SIGUSR1) != -1);
     sleep (3);
 
     printf("\nPARENT: sending SIGQUIT\n\n");
-    kill(ppid, SIGUSR1);
+    assert(kill(ppid, SIGUSR1) != -1);
     sleep (3);
+
+    return (0);
 }

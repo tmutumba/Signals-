@@ -57,9 +57,22 @@ include CMakeFiles/signals.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/signals.dir/flags.make
 
+CMakeFiles/signals.dir/chld.c.o: CMakeFiles/signals.dir/flags.make
+CMakeFiles/signals.dir/chld.c.o: ../chld.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tonnyhuey/CLionProjects/signals/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/signals.dir/chld.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/signals.dir/chld.c.o   -c /Users/tonnyhuey/CLionProjects/signals/chld.c
+
+CMakeFiles/signals.dir/chld.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/signals.dir/chld.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tonnyhuey/CLionProjects/signals/chld.c > CMakeFiles/signals.dir/chld.c.i
+
+CMakeFiles/signals.dir/chld.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/signals.dir/chld.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tonnyhuey/CLionProjects/signals/chld.c -o CMakeFiles/signals.dir/chld.c.s
+
 CMakeFiles/signals.dir/main.c.o: CMakeFiles/signals.dir/flags.make
 CMakeFiles/signals.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tonnyhuey/CLionProjects/signals/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/signals.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tonnyhuey/CLionProjects/signals/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/signals.dir/main.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/signals.dir/main.c.o   -c /Users/tonnyhuey/CLionProjects/signals/main.c
 
 CMakeFiles/signals.dir/main.c.i: cmake_force
@@ -70,29 +83,16 @@ CMakeFiles/signals.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/signals.dir/main.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tonnyhuey/CLionProjects/signals/main.c -o CMakeFiles/signals.dir/main.c.s
 
-CMakeFiles/signals.dir/child.c.o: CMakeFiles/signals.dir/flags.make
-CMakeFiles/signals.dir/child.c.o: ../child.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tonnyhuey/CLionProjects/signals/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/signals.dir/child.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/signals.dir/child.c.o   -c /Users/tonnyhuey/CLionProjects/signals/child.c
-
-CMakeFiles/signals.dir/child.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/signals.dir/child.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tonnyhuey/CLionProjects/signals/child.c > CMakeFiles/signals.dir/child.c.i
-
-CMakeFiles/signals.dir/child.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/signals.dir/child.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tonnyhuey/CLionProjects/signals/child.c -o CMakeFiles/signals.dir/child.c.s
-
 # Object files for target signals
 signals_OBJECTS = \
-"CMakeFiles/signals.dir/main.c.o" \
-"CMakeFiles/signals.dir/child.c.o"
+"CMakeFiles/signals.dir/chld.c.o" \
+"CMakeFiles/signals.dir/main.c.o"
 
 # External object files for target signals
 signals_EXTERNAL_OBJECTS =
 
+signals: CMakeFiles/signals.dir/chld.c.o
 signals: CMakeFiles/signals.dir/main.c.o
-signals: CMakeFiles/signals.dir/child.c.o
 signals: CMakeFiles/signals.dir/build.make
 signals: CMakeFiles/signals.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tonnyhuey/CLionProjects/signals/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable signals"

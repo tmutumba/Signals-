@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/signals.dir/chld.c.o"
   "CMakeFiles/signals.dir/main.c.o"
-  "CMakeFiles/signals.dir/child.c.o"
   "signals.pdb"
   "signals"
 )

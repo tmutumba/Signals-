@@ -123,32 +123,32 @@ signals/fast:
 	$(MAKE) -f CMakeFiles/signals.dir/build.make CMakeFiles/signals.dir/build
 .PHONY : signals/fast
 
-child.o: child.c.o
+chld.o: chld.c.o
 
-.PHONY : child.o
+.PHONY : chld.o
 
 # target to build an object file
-child.c.o:
-	$(MAKE) -f CMakeFiles/signals.dir/build.make CMakeFiles/signals.dir/child.c.o
-.PHONY : child.c.o
+chld.c.o:
+	$(MAKE) -f CMakeFiles/signals.dir/build.make CMakeFiles/signals.dir/chld.c.o
+.PHONY : chld.c.o
 
-child.i: child.c.i
+chld.i: chld.c.i
 
-.PHONY : child.i
+.PHONY : chld.i
 
 # target to preprocess a source file
-child.c.i:
-	$(MAKE) -f CMakeFiles/signals.dir/build.make CMakeFiles/signals.dir/child.c.i
-.PHONY : child.c.i
+chld.c.i:
+	$(MAKE) -f CMakeFiles/signals.dir/build.make CMakeFiles/signals.dir/chld.c.i
+.PHONY : chld.c.i
 
-child.s: child.c.s
+chld.s: chld.c.s
 
-.PHONY : child.s
+.PHONY : chld.s
 
 # target to generate assembly for a file
-child.c.s:
-	$(MAKE) -f CMakeFiles/signals.dir/build.make CMakeFiles/signals.dir/child.c.s
-.PHONY : child.c.s
+chld.c.s:
+	$(MAKE) -f CMakeFiles/signals.dir/build.make CMakeFiles/signals.dir/chld.c.s
+.PHONY : chld.c.s
 
 main.o: main.c.o
 
@@ -186,9 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... signals"
-	@echo "... child.o"
-	@echo "... child.i"
-	@echo "... child.s"
+	@echo "... chld.o"
+	@echo "... chld.i"
+	@echo "... chld.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

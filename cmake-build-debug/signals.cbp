@@ -78,7 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/tonnyhuey/CLionProjects/signals/child.c">
+		<Unit filename="/Users/tonnyhuey/CLionProjects/signals/chld.c">
 			<Option target="signals"/>
 		</Unit>
 		<Unit filename="/Users/tonnyhuey/CLionProjects/signals/main.c">
